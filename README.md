@@ -29,3 +29,4 @@ Notes:
 ### 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 - The average are calculated using function aggregate. The result is stored in variable *tidy* which will be then stored into a file named "tidy_data.txt"
+- *tidy* has 180 rows. This is because: There are 30 subject and 6 activities, thus there are 30*6 = 180 averages for each variable.
