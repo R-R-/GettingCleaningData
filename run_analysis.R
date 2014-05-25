@@ -1,3 +1,5 @@
+# The number of train and test records, respectively.
+# Setting them with smaller values (say, 100) allows the script to run faster for testing purposes
 NTRAIN <- 7352
 NTEST <- 2947
 
@@ -11,7 +13,7 @@ test <- read.table("../Data/test/X_test.txt", sep="", header=F, nrows=NTEST)
 # Merge train & test dataset
 all <- rbind(train, test)
 
-# Remove variables to save space
+# Remove variables train and test to save space, as they are no longer needed
 remove(train)
 remove(test)
 

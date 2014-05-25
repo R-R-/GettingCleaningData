@@ -8,11 +8,11 @@ The script run_analysis.R clean the data. It does the following:
 - The training & testing dataset are then merged using rbind into a single variable named *all*
 
 Notes:
-- Here I only merged X_train & X_test. y_train and y_test, subject_train, subject_test are merged into *all* later in part 3 for coding convenience.
+- In the first part of the code, I only merged X_train & X_test. y_train and y_test, subject_train, subject_test are merged into *all* later in part 3 for coding convenience.
 
 ### 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
 
-- First the list of features names are read into variable *features*
+- First the list of all feature names are read into variable *features*
 - Then the features with mean and standard deviation are found using regular expression. The column indices are stored in variable *good_columns*
 - Variable *all* is subsetted with *good_columns*
 
